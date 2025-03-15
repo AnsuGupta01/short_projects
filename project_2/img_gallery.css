@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(0, 0, 0, 0.964);
+}
+.container{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container img
+{
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.5s;
+}
+.container img:hover
+{
+    width: 100%;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-play-state: running;
+    
+}
+@keyframes glow
+{
+    50%{box-shadow: 0px 0px 50px hsl(60, 98%, 50%);}
+}
